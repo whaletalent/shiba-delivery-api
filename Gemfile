@@ -41,7 +41,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 gem 'ransack'
 gem 'geocoder', '~> 1.5', '>= 1.5.1'
-gem 'active_model_serializers', '~> 0.10.2'
+gem 'active_model_serializers', '~> 0.10.2', require: true
 end
 
 
