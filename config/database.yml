@@ -38,12 +38,21 @@ default: &default
 development:
   adapter: postgresql
   encoding: unicode
+  database: shibadb
+  pool: 5
+  username: postgres
+  password: rootuser
+  timeout: 5000
+test:
+  adapter: postgresql
+  encoding: unicode
   database: d1eauocf1eglta
   pool: 5
   username: pdymikewsasylf
   password: aedea39119418876888d54f5ce82ea45bf1009f12038ce05b5f1a2b2e9f0bce3
   timeout: 5000
-test:
+
+production:
   adapter: postgresql
   encoding: unicode
   database: d1eauocf1eglta
