@@ -28,6 +28,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
+gem 'geocoder', '~> 1.5', '>= 1.5.1'
+gem 'active_model_serializers', '~> 0.10.2', require: true
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -40,8 +42,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 gem 'ransack'
-gem 'geocoder', '~> 1.5', '>= 1.5.1'
-gem 'active_model_serializers', '~>0.9.4'
 end
 
 
