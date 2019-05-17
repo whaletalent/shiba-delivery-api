@@ -45,8 +45,8 @@ group :development do
 end
 
 group :production do
-  gem  'rails_12factor'
-  gem 'active_model_serializers', '~> 0.10.2'
+  gem 'geocoder', '~> 1.5', '>= 1.5.1'
+  gem 'active_model_serializers', '~> 0.10.2', require: true
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
