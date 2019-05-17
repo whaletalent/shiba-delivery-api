@@ -39,14 +39,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-gem 'geocoder', '~> 1.5', '>= 1.5.1'
-gem 'active_model_serializers', '~> 0.10.2', require: true
-gem 'ransack'
-end
-
-group :production do
+  gem 'ransack'
   gem 'geocoder', '~> 1.5', '>= 1.5.1'
-gem 'active_model_serializers', '~> 0.10.2', require: true
+  gem 'active_model_serializers', '~> 0.10.2', require: true
 end
 
 
