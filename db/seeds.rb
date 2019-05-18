@@ -1,4 +1,4 @@
-Product.destroy_all
+    Product.destroy_all
    ProductCategory.destroy_all
    Restaurant.destroy_all
    Category.destroy_all
