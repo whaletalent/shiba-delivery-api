@@ -5,7 +5,7 @@
    
    puts 'Criando Categorias'
    
-   path_image = 'public/images/categories/mexican.jpg'
+   path_image = 'https://images.pexels.com/photos/5317/food-salad-restaurant-person.jpg'
    c = Category.create(id: 1, title: 'mexicana')
    c.image.attach(io: File.open(path_image), filename: 'mexican.jpg')
    
