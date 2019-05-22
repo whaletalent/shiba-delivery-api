@@ -14,3 +14,6 @@
 
 * run server
 > rails s
+
+* Heroku Client Demo:
+[https://shiba-delivery-client.herokuapp.com/](https://shiba-delivery-client.herokuapp.com/)
