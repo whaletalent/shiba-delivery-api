@@ -1,32 +1,18 @@
 
 
 default: &default
-  adapter: postgresql
+  adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: shibadb
-  pool: 5
-  username: postgres
-  password: rootuser
-  timeout: 5000
+  <<: *default
+  database: db/development.sqlite3
+
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: d1eauocf1eglta
-  pool: 5
-  username: pdymikewsasylf
-  password: aedea39119418876888d54f5ce82ea45bf1009f12038ce05b5f1a2b2e9f0bce3
-  timeout: 5000
+  <<: *default
+  database: db/development.sqlite3
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: d1eauocf1eglta
-  pool: 5
-  username: pdymikewsasylf
-  password: aedea39119418876888d54f5ce82ea45bf1009f12038ce05b5f1a2b2e9f0bce3
-  timeout: 5000
+  <<: *default
+  database: db/development.sqlite3
